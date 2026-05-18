@@ -6,7 +6,7 @@
   "services": [
     {
       "name": "Agent Card",
-      "endpoint": "https://raw.githubusercontent.com/miluan1995/heixiazi-token-risk-agent/main/public/heixiazi-agent-card.json",
+      "endpoint": "https://miluan1995.github.io/heixiazi-token-risk-agent/public/heixiazi-agent-card.json",
       "version": "0.1.0"
     },
     {

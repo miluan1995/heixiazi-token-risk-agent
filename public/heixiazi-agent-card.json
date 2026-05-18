@@ -43,5 +43,5 @@
     "no_approve_by_default": true
   },
   "source_repository": "https://github.com/miluan1995/heixiazi-token-risk-agent",
-  "metadata_url": "https://raw.githubusercontent.com/miluan1995/heixiazi-token-risk-agent/main/public/heixiazi-agent-card.json"
+  "metadata_url": "https://miluan1995.github.io/heixiazi-token-risk-agent/public/heixiazi-agent-card.json"
 }
