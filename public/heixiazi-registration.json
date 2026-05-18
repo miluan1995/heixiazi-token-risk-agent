@@ -1,0 +1,25 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "Heixiazi",
+  "description": "A BNB Chain focused on-chain intelligence agent for meme-token risk checks, agent-commerce monitoring, and market signal analysis.",
+  "image": "",
+  "services": [
+    {
+      "name": "Agent Card",
+      "endpoint": "https://gist.githubusercontent.com/miluan1995/ec888ec30f03680ef7edbcd415272109/raw/heixiazi-agent-card.json",
+      "version": "0.1.0"
+    }
+  ],
+  "registrations": [
+    {
+      "chainId": 56,
+      "registry": "0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+      "agentId": "93183"
+    }
+  ],
+  "supportedTrust": [
+    "manual-operator-review",
+    "dry-run-first",
+    "no-private-key-export"
+  ]
+}

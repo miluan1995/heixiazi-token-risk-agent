@@ -1,0 +1,37 @@
+{
+  "schema_version": "0.1",
+  "name": "Heixiazi",
+  "display_name": "Heixiazi On-chain Trading Intelligence",
+  "description": "A BNB Chain focused on-chain intelligence agent for meme-token risk checks, agent-commerce monitoring, and market signal analysis.",
+  "category": "trading-intelligence",
+  "chains": ["bsc"],
+  "agent_wallet": "0x11e82531407413f94fc9f6c8e99b5df0c76bb83f",
+  "erc8004": {
+    "chain_id": 56,
+    "registry": "0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+    "agent_id": 93183,
+    "agent_id_hex": "0x16bff",
+    "registration_tx": "0xc7b69537ab277f9f8bd7fcfbaa7cf2c77e7af1145c5e8e91cf470e704cbc2a0c"
+  },
+  "capabilities": [
+    "onchain-token-research",
+    "meme-risk-check",
+    "liquidity-and-holder-snapshot",
+    "agent-commerce-monitoring",
+    "market-signal-analysis"
+  ],
+  "endpoints": [
+    {
+      "name": "job-api-local-preview",
+      "url": "http://127.0.0.1:8787/job",
+      "version": "0.1.0",
+      "status": "local-preview-not-public"
+    }
+  ],
+  "safety": {
+    "signing_mode": "okx-agentic-wallet-onchainos",
+    "private_key_policy": "never-export-never-store",
+    "automation_policy": "manual-reviewed-contract-calls-only",
+    "no_approve_by_default": true
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "task_type": "bsc-token-risk-report",
+  "version": "0.1",
+  "agent": {
+    "name": "Heixiazi",
+    "erc8004_agent_id": 93183,
+    "wallet": "0x11e82531407413f94fc9f6c8e99b5df0c76bb83f"
+  },
+  "input_schema": {
+    "type": "object",
+    "required": ["token_address"],
+    "properties": {
+      "token_address": {"type": "string", "pattern": "^0x[a-fA-F0-9]{40}$"},
+      "chain": {"type": "string", "enum": ["bsc"], "default": "bsc"}
+    }
+  },
+  "deliverable_schema": {
+    "type": "object",
+    "required": ["token_address", "risk_score", "risk_level", "signals", "sources"],
+    "properties": {
+      "token_address": {"type": "string"},
+      "risk_score": {"type": "integer", "minimum": 0, "maximum": 100},
+      "risk_level": {"type": "string", "enum": ["low", "medium", "high", "critical", "unknown_error"]},
+      "signals": {"type": "array", "items": {"type": "string"}},
+      "sources": {"type": "array"},
+      "market": {"type": ["object", "null"]},
+      "limitations": {"type": "array", "items": {"type": "string"}}
+    }
+  },
+  "pricing_draft": {
+    "free_preview": "DexScreener-only risk snapshot",
+    "apex_paid_job_v0": "0.1-1 U equivalent after BNB official APEX flow is published",
+    "mainnet_policy": "manual approve/settle only; no unlimited approvals"
+  },
+  "timeout_seconds": 60,
+  "refund_policy": "refund if no deliverable before timeout or source fetch hard-fails",
+  "dispute_policy": "client can dispute if token address mismatch or required fields absent"
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "0.1",
+  "name": "Heixiazi",
+  "display_name": "Heixiazi On-chain Trading Intelligence",
+  "description": "A BNB Chain focused on-chain intelligence agent for meme-token risk checks, agent-commerce monitoring, and market signal analysis.",
+  "category": "trading-intelligence",
+  "chains": ["bsc", "bsc-testnet"],
+  "capabilities": [
+    "onchain-token-research",
+    "meme-risk-check",
+    "liquidity-and-holder-snapshot",
+    "agent-commerce-monitoring",
+    "market-signal-analysis"
+  ],
+  "service_endpoints": {
+    "agent_card": "http://127.0.0.1:8787/agent-card",
+    "job": "http://127.0.0.1:8787/job",
+    "health": "http://127.0.0.1:8787/health"
+  },
+  "wallet_policy": {
+    "recommended_wallet": "isolated-agent-wallet-only",
+    "mainnet_mode": "read-only-until-official-release-and-manual-approval",
+    "never_use": ["owner-main-wallet", "deployment-wallet-with-existing-assets"]
+  },
+  "contact": {
+    "operator": "miluan1995",
+    "agent": "heixiazi"
+  },
+  "status": "prep-local-only"
+}
