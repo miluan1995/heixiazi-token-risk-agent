@@ -24,16 +24,22 @@
   ],
   "endpoints": [
     {
+      "name": "job-api",
+      "url": "https://heixiazi-token-risk-agent.miluan1995.workers.dev/job/token-risk",
+      "version": "0.1.0",
+      "status": "live"
+    },
+    {
+      "name": "health",
+      "url": "https://heixiazi-token-risk-agent.miluan1995.workers.dev/health",
+      "version": "0.1.0",
+      "status": "live"
+    },
+    {
       "name": "source-repository",
       "url": "https://github.com/miluan1995/heixiazi-token-risk-agent",
       "version": "0.1.0",
       "status": "public-source"
-    },
-    {
-      "name": "job-api",
-      "url": "pending-public-runtime",
-      "version": "0.1.0",
-      "status": "source-published-runtime-not-deployed"
     }
   ],
   "safety": {
@@ -43,5 +49,10 @@
     "no_approve_by_default": true
   },
   "source_repository": "https://github.com/miluan1995/heixiazi-token-risk-agent",
-  "metadata_url": "https://miluan1995.github.io/heixiazi-token-risk-agent/public/heixiazi-agent-card.json"
+  "metadata_url": "https://miluan1995.github.io/heixiazi-token-risk-agent/public/heixiazi-agent-card.json",
+  "runtime": {
+    "type": "cloudflare-worker",
+    "base_url": "https://heixiazi-token-risk-agent.miluan1995.workers.dev",
+    "deployed": true
+  }
 }
