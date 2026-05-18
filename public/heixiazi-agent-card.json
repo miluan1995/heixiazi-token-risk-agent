@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1",
+  "schema_version": "0.2",
   "name": "Heixiazi",
   "display_name": "Heixiazi On-chain Trading Intelligence",
   "description": "A BNB Chain focused on-chain intelligence agent for meme-token risk checks, agent-commerce monitoring, and market signal analysis.",
@@ -24,21 +24,33 @@
   ],
   "endpoints": [
     {
+      "name": "agent-service-root",
+      "url": "https://heixiazi-token-risk-agent.miluan1995.workers.dev/",
+      "version": "0.2.0",
+      "status": "live"
+    },
+    {
+      "name": "agent-manifest",
+      "url": "https://heixiazi-token-risk-agent.miluan1995.workers.dev/.well-known/agent.json",
+      "version": "0.2.0",
+      "status": "live"
+    },
+    {
       "name": "job-api",
       "url": "https://heixiazi-token-risk-agent.miluan1995.workers.dev/job/token-risk",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "status": "live"
     },
     {
       "name": "health",
       "url": "https://heixiazi-token-risk-agent.miluan1995.workers.dev/health",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "status": "live"
     },
     {
       "name": "source-repository",
       "url": "https://github.com/miluan1995/heixiazi-token-risk-agent",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "status": "public-source"
     }
   ],
@@ -54,5 +66,7 @@
     "type": "cloudflare-worker",
     "base_url": "https://heixiazi-token-risk-agent.miluan1995.workers.dev",
     "deployed": true
-  }
+  },
+  "version": "0.2.0",
+  "capability_schema_url": "https://heixiazi-token-risk-agent.miluan1995.workers.dev/.well-known/agent.json"
 }

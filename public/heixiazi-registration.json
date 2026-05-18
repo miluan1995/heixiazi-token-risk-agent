@@ -7,22 +7,27 @@
     {
       "name": "Agent Card",
       "endpoint": "https://miluan1995.github.io/heixiazi-token-risk-agent/public/heixiazi-agent-card.json",
-      "version": "0.1.0"
+      "version": "0.2.0"
+    },
+    {
+      "name": "Agent Manifest",
+      "endpoint": "https://heixiazi-token-risk-agent.miluan1995.workers.dev/.well-known/agent.json",
+      "version": "0.2.0"
     },
     {
       "name": "Token Risk Job API",
       "endpoint": "https://heixiazi-token-risk-agent.miluan1995.workers.dev/job/token-risk",
-      "version": "0.1.0"
+      "version": "0.2.0"
     },
     {
       "name": "Health",
       "endpoint": "https://heixiazi-token-risk-agent.miluan1995.workers.dev/health",
-      "version": "0.1.0"
+      "version": "0.2.0"
     },
     {
       "name": "Source Repository",
       "endpoint": "https://github.com/miluan1995/heixiazi-token-risk-agent",
-      "version": "0.1.0"
+      "version": "0.2.0"
     }
   ],
   "registrations": [
